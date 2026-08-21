@@ -1,9 +1,12 @@
-# Morphoné
+<p align="center">
+   <img width="269" height="226" alt="image" src="https://github.com/user-attachments/assets/cec96fda-f211-4968-9401-4c632554be5d" />
+</p>
+
 The name sums Morphé (μορφή - Form) and Phoné (φωνή - Sound). We aim at creating a studio quality artistic morphing between a source recording and a destination instrument or ensemble.
 
-We search today's available technologies for Timbre Transfer, Sound-to-MIDI conversion, Source Separation in order to transform audio recordings and obtain executions that can then be summed toghter to create, for the musicians, new expressive possibilities.
+We search today's available technologies for Timbre Transfer, Sound-to-MIDI conversion, Source Separation in order to transform audio recordings and obtain executions that can then be summed toghter to create, for the musicians, new expressive possibilities. 
 
-We have asked a few artists for their 'morphing' wish list. As per today, we are working on three different sub-projects that have proven feasible. Two are finished, the third is a work-in-progress. Results are reported here per sub-project.
+We have asked a few artists for their 'morphing' wish list. As per today, we are working on three different sub-projects that have proven feasible. Two are finished, the third is a work-in-progress. Results are reported here per sub-project. 
 
 Other sub-projects have not given satisfactory results, and are not reported here. Still, they have been of tremendous help to enstablish future feasibility.
 
