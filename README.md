@@ -14,4 +14,4 @@ We aim at nothing less than Recording Studio quality results. This requires raw,
 
 There are three main sets of operations, to cover monotimbral/monophonic, monotimbral/polyphonic, polytimbral/polyphonic projects, where we tweak existing algorithms, borrowed from original owners according to their licences, to Morphoné needs.
 
-Other contributors are more than welcome, in order to expand all the artistic possibilities of Morphoné that, we hope, will become a new expressive tools in the ends of artists and sound engineers.
+Other contributors are more than welcome, in order to expand all the artistic possibilities of Morphoné that, we hope, will become a new expressive tool in the ends of artists and sound engineers.
