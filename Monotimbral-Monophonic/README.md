@@ -7,7 +7,9 @@ Within this directory, we provide two separate Google Colab notebooks. These not
 * **HubertSoft Encoder:** Provided in `Encoder_HubertSoft.ipynb`
 * **ContentVec Encoder:** Provided in `Encoder_ContentVec.ipynb`
 
-**Performance Note:** Following our experimental evaluations, we achieved significantly more satisfying results from a musical and artistic perspective utilizing the **HubertSoft** encoder. We highly recommend utilizing this model for tasks requiring high musical fidelity and accurate timbre reproduction.
+**Performance Note & Our Experiment:** Following our experimental evaluations, we achieved significantly more satisfying results from a musical and artistic perspective utilizing the **HubertSoft** encoder. For our specific goals, we utilized the NSynth dataset for both training and validation, sourced directly from [Google Magenta](https://magenta.withgoogle.com/datasets/nsynth). Starting from these datasets, we trained the model specifically to reproduce the sound of a 'brass' instrument. After several training epochs and evaluating various checkpoints, we successfully converted a monotimbral-monophonic saxophone audio file into a realistic brass sound.
+
+**Custom Datasets:** Please note that while we utilized the NSynth dataset, any potential user is completely free to use their own preferred custom dataset. The only technical requirements for custom datasets are that the audio files must be in `.wav` format and each sample must have a duration of no less than 2 seconds.
 
 ---
 
