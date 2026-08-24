@@ -1,4 +1,4 @@
-# Morphone: Monotimbral-Monophonic Timbre Transfer
+# Morphoné: Monotimbral-Monophonic Timbre Transfer
 
 ## Overview
 This repository focuses on Monotimbral-Monophonic timbre transfers utilizing variations of the DDSP (Differentiable Digital Signal Processing) Timbre Transfer algorithm originally introduced by Google Magenta. 
