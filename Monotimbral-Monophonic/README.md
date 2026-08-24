@@ -47,7 +47,7 @@ Ensure your `.wav` dataset files are uploaded to the `./data/train/audio` and `.
 * Select up to 5 target acoustic instruments from the available dataset.
 * Define the maximum number of audio samples to utilize for training.
 
-The subsequent cell will scan the repository, match the requested instruments, and copy the subset to the local Colab SSD (`/content/dataset_temp`) to drastically improve I/O speeds during training.
+The subsequent cell will scan the repository, match the requested instruments, and copy the subset to the local Colab SSD (`/content/dataset_temp`) to improve I/O speeds during training.
 
 ### 3. Preprocessing
 Execute the preprocessing cell. The `preprocess.py` script will process the audio files copied to the local SSD to extract the fundamental frequency (F0) and the acoustic features using the selected encoder. This step generates the matrices required by the DDSP and diffusion models.
