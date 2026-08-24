@@ -8,7 +8,7 @@ Within this directory, we provide two separate Google Colab notebooks. These not
 * **ContentVec Encoder:** Provided in `Encoder_ContentVec.ipynb`
 
 ## Performance Note & Our Experiment
-For our specific research goals, we utilized the NSynth dataset for both training and validation, sourced directly from [Google Magenta](https://magenta.withgoogle.com/datasets/nsynth). We focused on training the model to accurately reproduce the sound of a 'brass' instrument. After evaluating multiple training epochs and checkpoints, we successfully converted a monotimbral-monophonic saxophone audio file into a highly realistic brass sound.
+For our specific research goals, we utilized the NSynth dataset for both training and validation, sourced directly from [Google Magenta](https://magenta.withgoogle.com/datasets/nsynth). We focused on training the model to accurately reproduce the sound of a 'brass' instrument. After evaluating multiple training epochs and checkpoints, we successfully converted a monotimbral-monophonic saxophone audio file into a realistic brass sound.
 
 Following these experimental evaluations, we concluded that the **HubertSoft** encoder yielded significantly more satisfying results from a musical and artistic perspective compared to the ContentVec alternative. We highly recommend utilizing the HubertSoft model for tasks requiring high musical fidelity.
 
@@ -22,14 +22,12 @@ While our experiments were conducted using the NSynth dataset, users are complet
 ## Prerequisites and Core Repository Setup
 To successfully run the code and train the models, it is mandatory to rely on the core framework from the original DDSP-SVC project. You must clone or download the source repository from `https://github.com/yxlllc/DDSP-SVC`, as it contains all the essential directory structures, scripts, and dependencies required to operate the model. 
 
-*Note: The provided Colab notebooks are already configured to clone this repository automatically during the initial environment setup phase.*
-
 ## Pre-trained Model Configuration
-Before initializing the training or inference procedures, specific pre-trained models must be downloaded and placed into their designated directories within the cloned DDSP-SVC workspace. 
+Before initializing the training or inference procedures, specific pre-trained models must be downloaded and placed into their designated directories within the cloned workspace. 
 
 * **Feature Encoders (Choose the one corresponding to your notebook):**
   * *ContentVec:* Download the pre-trained ContentVec encoder weights and place the file inside the `pretrain/contentvec` directory.
-  * *HubertSoft:* Download the pre-trained HubertSoft encoder weights, place the file inside the `pretrain/hubert` directory, and ensure the configuration file is updated accordingly.
+  * *HubertSoft:* Download the pre-trained HubertSoft encoder weights, place the file inside the `pretrain/hubert` directory, and ensure the configuration file `configs/reflow.yaml` is updated accordingly.
 * **Vocoder:**
   Download and extract the pre-trained NSF-HiFiGAN vocoder. The model checkpoint should be placed at the path specified by the `vocoder.ckpt` parameter in your configuration file (the default location is `pretrain/nsf_hifigan/model`). Additionally, the associated `config.json` file must reside in the exact same directory (e.g., `pretrain/nsf_hifigan/config.json`).
 * **Pitch Extractor:**
