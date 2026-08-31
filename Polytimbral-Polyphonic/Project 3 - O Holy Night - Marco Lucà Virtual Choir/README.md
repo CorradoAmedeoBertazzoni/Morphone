@@ -1,13 +1,11 @@
-Project 3 - O Holy Night by Adolphe Adam - Marco Lucà directing Virtual Choir
-
-Artist: Pietro Nobile
+Artist: Marco Lucà directing Virtual Choir - Corale “Anna Maria Scala” del Cen.Tr.O 21, Coro Note di Volta, Coro Spore. - 
 
 Song: O Holy Night by Adolphe Adam
 
-The idea was made to convert Pietro Nobile execution of his composition Manime first to a Gran Coda timbre, then to obtain the Morphoné version. He composed Manimé somehow willing to experiment "the piano language on guitar", therefore he was more than happy to join this project.
+The original performance, crafted during last pandemic, is available here: https://www.youtube.com/watch?v=jhYRmA1UDwU
 
-Strategy: only a portion of 2'.48" of the whole 4'.55" song was converted. The straight recording of the execution, with no treatments, has been split into three parts, treated separately with Basic Pitch, gradually testing several different settings, to obtain their relative workable .mid files. These have been edited - retaining only Note On / Off and Note Velocity MIDI informations - and assembled with Logic Pro, then used to drive Gran Coda Multisample from PSound - https://www.psound.it/gran_coda.html.
+Strategy: the original stereo mix of the choir recording, isolated from the music background, with no treatments, has been edited and reduced to ~2'. It has then been split into four parts, treated separately with Basic Pitch, gradually testing several different settings, to obtain their relative workable .mid files. These have been edited - retaining only Note On / Off informations - and assembled with Logic Pro, then used to drive a Cathedral Organ from the standard Logic library.
 
-The reverb used, wich is part of the artist's emotional and technical language, has been directly added by him, in his Studio, on all the final versions presented here.
+MIDI Velocity and Pitch Bend informations have been discarted, being useless for an Organ multisample. Both Choir and Organ have been treated with the same reverb, to 'sit' them in the same appearent ambient.
 
-Judging them, be aware that the Timbre Transfer target is not to create a Piano cover of the original recording but, instead, to preserve as close as possible the original execution, to then create the Morphoné result. For instance, an essential part of the Piano language is the use of the sustain pedal that, if added, would have been completely unnatural.
+In this experiment Basic Pitch has proven to be useful to derive MIDI informations from a Polytimbral source.
