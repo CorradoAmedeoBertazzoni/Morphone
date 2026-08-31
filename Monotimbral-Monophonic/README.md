@@ -3,6 +3,8 @@
 ## Overview
 This repository focuses on Monotimbral-Monophonic timbre transfers utilizing variations of the DDSP (Differentiable Digital Signal Processing) Timbre Transfer algorithm originally introduced by Google Magenta. 
 
+It should be noted that, for many applications, the tools offered by Google Magenta are still to be taken into account as an immediate way to create a first, rough transfer that will generate partially satisfactory results. They can, then, be perfected with what follows here. Starting reference would be https://github.com/magenta/ddsp.
+
 Within this directory, we provide two separate Google Colab notebooks. These notebooks are structured to handle the entire pipeline (setup, preprocessing, training, and inference) for two distinct models based on the DDSP-SVC architecture. The primary difference between the two implementations lies in the acoustic encoder used for feature extraction:
 * **HubertSoft Encoder:** Provided in `Encoder_HubertSoft.ipynb`
 * **ContentVec Encoder:** Provided in `Encoder_ContentVec.ipynb`
@@ -67,4 +69,4 @@ Click the execution button to run the morphing process. The synthesized audio wi
 ---
 
 ## Acknowledgements
-This project utilizes the DDSP-SVC architecture created by `yxlllc` and expands upon the foundational Differentiable Digital Signal Processing concepts introduced by Google Magenta.
+This project utilizes the DDSP-SVC architecture created by `yxlllc` and expands upon the foundational Differentiable Digital Signal Processing concepts introduced by Google Magenta, already quoted at the beginning of this document.
