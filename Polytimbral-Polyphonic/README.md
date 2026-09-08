@@ -1,6 +1,4 @@
-# Morphoné: Monotimbral-Polyphonic Timbre Transfer and Morphing
-
-Morphoné: Polytimbral-Polyphonic Timbre Transfer and Morphing
+# Morphoné: Polytimbral-Polyphonic Timbre Transfer and Morphing
 
 ## Overview
 
