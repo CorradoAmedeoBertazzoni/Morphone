@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morphoné - v3 Mac Ready</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- PRIMA SCHERMATA: OVERVIEW DEL PROGETTO -->
+        <section id="landing" class="view active">
+            <div class="dropdown-menu">
+                <button class="dropdown-btn" onclick="toggleDropdown()">Menu ☰</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('landing')">Home</a>
+                    <a href="#" onclick="showSection('home')">Listening Portal</a>
+                    <a href="#" onclick="showSection('contacts')">Contacts</a>
+                    <a href="#" onclick="showSection('technology')">Our Technology</a>
+                </div>
+            </div>
+
+            <header class="main-header">
+                <div class="logo-container">
+                    <img src="Morphoné.png" alt="Morphoné Logo" class="site-logo">
+                </div>
+            </header>
+
+            <div class="overview-section">
+                <h2>Project Overview</h2>
+
+                <div class="overview-row">
+                    <div class="overview-text">
+                        <p>
+                            The name <strong>Morphoné</strong> blends the Greek words <em>Morphé</em> (μορφή - Form) and <em>Phoné</em> (φωνή - Sound). Our mission is to create seamless, studio-quality artistic morphing between a source recording and a destination instrument.
+                        </p>
+                        <p>
+                            We harness cutting-edge technologies — such as <em>Timbre Transfer</em>, <em>Sound-to-MIDI</em> conversion, and <em>Source Separation</em> — to transform original audio recordings and unlock entirely new expressive possibilities for musicians and sound designers.
+                        </p>
+                    </div>
+                    <div class="overview-media">
+                        <img src="AI_Sax_Brass.jpg" alt="Morphoné Cover" class="overview-img">
+                    </div>
+                </div>
+
+                <div class="overview-row reverse">
+                    <div class="overview-text">
+                        <p>
+                            To guide you through our research, we have organized our sub-projects into three core categories, each mapping directly to an interactive experience in our Listening Portal:
+                        </p>
+                        <ul style="color: #292e34; font-size: 0.85rem; line-height: 1.6; margin-left: 20px; list-style-type: square;">
+                            <li style="margin-bottom: 8px;">
+                                <strong>Monotimbral Monophonic:</strong> Timbral transformation applied to single melodic lines (<em>Sax to Trumpet</em>).
+                            </li>
+                            <li style="margin-bottom: 8px;">
+                                <strong>Monotimbral Polyphonic:</strong> Morphing applied to complex polyphonic harmonies and chords (<em>Guitar to Piano</em>).
+                            </li>
+                            <li style="margin-bottom: 8px;">
+                                <strong>Polytimbral Polyphonic:</strong> Complex timbral transitions between heterogeneous ensembles (<em>Choir to Organ</em>).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="overview-media">
+                        <img src="Cover.jpg" alt="Morphoné Cover" class="overview-img">
+                    </div> 
+                </div>
+
+                <div class="overview-row">
+                    <div class="overview-text">
+                        <p>
+                            While appearing disarmingly simple, each track in our archives is the result of careful coding and meticulous acoustic editing, crafted in close collaboration with the original artists.
+                        </p>
+                        <p>
+                            Morphoné is an open ecosystem: we warmly welcome sound engineers, developers, and artists to join us in expanding the horizons of acoustic creativity.
+                        </p>
+                    </div>
+                    <div class="overview-media">
+                        <img src="AI_Choir_Organ.jpg" alt="Morphoné Cover" class="overview-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECONDA SCHERMATA: PORTALE D'ASCOLTO (HOME PAGE) -->
+        <section id="home" class="view">
+            <div class="dropdown-menu">
+                <button class="dropdown-btn" onclick="toggleDropdown()">Menu ☰</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('landing')">Home</a>
+                    <a href="#" onclick="showSection('home')">Listening Portal</a>
+                    <a href="#" onclick="showSection('contacts')">Contacts</a>
+                    <a href="#" onclick="showSection('technology')">Our Technology</a>
+                </div>
+            </div>
+
+            <header class="main-header">
+                <div class="logo-container">
+                    <img src="Morphoné.png" alt="Morphoné Logo" class="site-logo">
+                </div>
+
+                <p class="portal-notice">
+                    All archival tracks are available for streaming. For studio-quality WAV versions or custom licensing inquiries, please reach out to us via the <a href="#" onclick="showSection('contacts')">Contacts</a> page, in accordance with the intellectual property and copyright terms of the respective artists.
+                </p>
+                <p>Select a Project</p>
+            </header>
+            
+            <div class="widget-panel">  
+                <div class="widget" onclick="showSection('section1')">
+                    <div class="widget-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%" style="display: block; margin: auto;">
+                            <defs>
+                                <linearGradient id="morphGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#2481cc" />
+                                    <stop offset="50%" stop-color="#8b5cf6" />
+                                    <stop offset="100%" stop-color="#ff8f00" />
+                                </linearGradient>
+                            </defs>
+                            <g class="saxophone-group" transform="translate(-20, 0)">
+                                <path fill="none" stroke="url(#morphGradient)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 32,16 C 38,16 42,18 42,24 L 42,64 A 14,14 0 0 0 70,64 L 70,52" />
+                                <path fill="url(#morphGradient)" stroke="url(#morphGradient)" stroke-width="2" stroke-linejoin="round" d="M 64,54 L 76,54 L 84,36 L 56,36 Z" />
+                                <ellipse cx="70" cy="36" rx="14" ry="4" fill="#17212b" stroke="url(#morphGradient)" stroke-width="3" />
+                                <path fill="url(#morphGradient)" d="M 25,11.5 L 25,20.5 L 32.8,16 Z" />
+                                <circle cx="35" cy="32" r="3.5" fill="url(#morphGradient)" />
+                                <circle cx="35" cy="42" r="3.5" fill="url(#morphGradient)" />
+                                <circle cx="35" cy="52" r="3.5" fill="url(#morphGradient)" />
+                                <line x1="42" y1="28" x2="46" y2="28" stroke="url(#morphGradient)" stroke-width="2.5" stroke-linecap="round" />
+                                <line x1="42" y1="38" x2="46" y2="38" stroke="url(#morphGradient)" stroke-width="2.5" stroke-linecap="round" />
+                                <line x1="42" y1="48" x2="46" y2="48" stroke="url(#morphGradient)" stroke-width="2.5" stroke-linecap="round" />
+                            </g>
+                            <g class="morph-transition-group" opacity="0.8">
+                                <path fill="none" stroke="#2481cc" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 4"
+                                      d="M 74,46 Q 92,30 104,46 T 129,46" />
+                                <circle cx="85" cy="30" r="2" fill="#2481cc" />
+                                <circle cx="104" cy="58" r="3" fill="#2481cc" />
+                                <circle cx="116" cy="36" r="1.5" fill="#2481cc" />
+                                <path fill="#2481cc" d="M 94,22 Q 94,26 98,26 Q 94,26 94,30 Q 94,26 90,26 Q 94,26 94,22 Z" />
+                                <path fill="#2481cc" d="M 118,58 Q 118,62 121,62 Q 118,62 118,66 Q 118,62 115,62 Q 118,62 118,58 Z" />
+                            </g>
+                            <g class="trumpet-group" transform="translate(18, 0)">
+                                <path fill="none" stroke="url(#morphGradient)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"
+                                      d="M 124,50 L 164,50 M 124,56 L 158,56 A 4,4 0 0 0 162,52 L 162,50" />
+                                <path fill="url(#morphGradient)" stroke="url(#morphGradient)" stroke-width="2" stroke-linejoin="round"
+                                      d="M 158,46 L 158,60 L 176,67 L 176,41 Z" />
+                                <ellipse cx="176" cy="54" rx="4" ry="14" fill="#17212b" stroke="url(#morphGradient)" stroke-width="3" />
+                                <path fill="url(#morphGradient)" d="M 124,53 L 118,49 L 118,57 Z" />
+                                <circle cx="131" cy="43" r="3.5" fill="url(#morphGradient)" />
+                                <circle cx="140" cy="43" r="3.5" fill="url(#morphGradient)" />
+                                <circle cx="149" cy="43" r="3.5" fill="url(#morphGradient)" />
+                                <line x1="136" y1="36" x2="136" y2="50" stroke="url(#morphGradient)" stroke-width="2.5" stroke-linecap="round" />
+                                <line x1="144" y1="36" x2="144" y2="50" stroke="url(#morphGradient)" stroke-width="2.5" stroke-linecap="round" />
+                                <line x1="152" y1="36" x2="152" y2="50" stroke="url(#morphGradient)" stroke-width="2.5" stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Monotimbral Monophonic</h3>
+                    <p>Sax to Trumpet Morphing</p>
+                </div>
+                
+                <!-- Widget 2: Acoustic Guitar to Piano (Monotimbral-Polyphonic) -->
+                <div class="widget" onclick="showSection('section2')">
+                    <div class="widget-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%" style="display: block; margin: auto;">
+                            <defs>
+                                <linearGradient id="morphGradientSec2" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#2481cc" />
+                                    <stop offset="50%" stop-color="#8b5cf6" />
+                                    <stop offset="100%" stop-color="#ff8f00" />
+                                </linearGradient>
+                            </defs>
+                            <g class="guitar-group" transform="translate(-10, 5)">
+                                <path fill="url(#morphGradientSec2)" stroke="url(#morphGradientSec2)" stroke-width="2" stroke-linejoin="round" d="M 38,40 C 28,40 24,45 24,50 C 24,55 28,57 33,57 C 26,61 26,74 38,74 C 50,74 50,61 43,57 C 48,57 52,55 52,50 C 52,45 48,40 38,40 Z" />
+                                <ellipse cx="38" cy="50" rx="5" ry="5" fill="#17212b" stroke="url(#morphGradientSec2)" stroke-width="2.5" />
+                                <rect x="32" y="63" width="12" height="3" rx="1" fill="url(#morphGradientSec2)" />
+                                <line x1="38" y1="38" x2="37.9" y2="8" stroke="url(#morphGradientSec2)" stroke-width="5.5" stroke-linecap="round" />
+                                <line x1="38" y1="16" x2="38" y2="10" stroke="url(#morphGradientSec2)" stroke-width="3" stroke-linecap="round" />
+                                <circle cx="33" cy="11" r="1.5" fill="url(#morphGradientSec2)" />
+                                <circle cx="33" cy="15" r="1.5" fill="url(#morphGradientSec2)" />
+                                <circle cx="43" cy="11" r="1.5" fill="url(#morphGradientSec2)" />
+                                <circle cx="43" cy="15" r="1.5" fill="url(#morphGradientSec2)" />
+                            </g>
+                            <g class="morph-transition-group" opacity="0.8">
+                                <path fill="none" stroke="#2481cc" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 4" d="M 74,46 Q 92,30 104,46 T 129,46" />
+                                <circle cx="85" cy="30" r="2" fill="#2481cc" />
+                                <circle cx="104" cy="58" r="3" fill="#2481cc" />
+                                <circle cx="116" cy="36" r="1.5" fill="#2481cc" />
+                                <path fill="#2481cc" d="M 94,22 Q 94,26 98,26 Q 94,26 94,30 Q 94,26 90,26 Q 94,26 94,22 Z" />
+                                <path fill="#2481cc" d="M 118,58 Q 118,62 121,62 Q 118,62 118,66 Q 118,62 115,62 Q 118,62 118,58 Z" />
+                            </g>
+                            <g class="grand-piano-group" transform="translate(22, 3)">
+                                <path fill="url(#morphGradientSec2)" stroke="url(#morphGradientSec2)" stroke-width="2" stroke-linejoin="round" d="M 124,56 L 164,56 C 164,42 160,30 146,30 L 124,30 Z" />
+                                <path fill="none" stroke="url(#morphGradientSec2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M 124.5,57 L 124.5,62 L 164,62" />
+                                <line x1="134" y1="56" x2="134" y2="62" stroke="url(#morphGradientSec2)" stroke-width="1.5" />
+                                <line x1="144" y1="56" x2="144" y2="62" stroke="url(#morphGradientSec2)" stroke-width="1.5" />
+                                <line x1="154" y1="56" x2="154" y2="62" stroke="url(#morphGradientSec2)" stroke-width="1.5" />
+                                <line x1="126" y1="30" x2="162" y2="10" stroke="url(#morphGradientSec2)" stroke-width="4.5" stroke-linecap="round" />
+                                <line x1="146" y1="30" x2="152" y2="18" stroke="url(#morphGradientSec2)" stroke-width="2.5" stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Monotimbral Polyphonic</h3>
+                    <p>Guitar to Piano Morphing</p>
+                </div>
+                
+                <div class="widget" onclick="showSection('section3')">
+                    <div class="widget-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%" style="display: block; margin: auto;">
+                            <defs>
+                                <linearGradient id="morphGradientSec3" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#2481cc" />
+                                    <stop offset="50%" stop-color="#8b5cf6" />
+                                    <stop offset="100%" stop-color="#ff8f00" />
+                                </linearGradient>
+                            </defs>
+                            <g class="choir-group" transform="translate(-4, 4)">
+                                <path fill="none" stroke="url(#morphGradientSec3)" stroke-width="1.5" stroke-linecap="round" d="M 20,24 A 16,16 0 0 1 52,24" />
+                                <path fill="none" stroke="url(#morphGradientSec3)" stroke-width="2" stroke-linecap="round"d="M 25,18 A 11,11 0 0 1 47,18" />
+                                <path fill="url(#morphGradientSec3)" d="M 29,66 L 31,41 C 31,38 41,38 41,41 L 43,66 Z" />
+                                <circle cx="36" cy="31" r="5" fill="url(#morphGradientSec3)" />
+                                <path fill="url(#morphGradientSec3)" d="M 19,66 L 21,47 C 21,44 29,44 29,47 L 31,66 Z" />
+                                <circle cx="25" cy="37" r="4.5" fill="url(#morphGradientSec3)" />
+                                <path fill="url(#morphGradientSec3)" d="M 41,66 L 43,47 C 43,44 51,44 51,47 L 53,66 Z" />
+                                <circle cx="47" cy="37" r="4.5" fill="url(#morphGradientSec3)" />
+                            </g>
+                            <g class="morph-transition-group" opacity="0.8">
+                                <path fill="none" stroke="#2481cc" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 4" d="M 74,46 Q 92,30 104,46 T 129,46" />
+                                <circle cx="85" cy="30" r="2" fill="#2481cc" />
+                                <circle cx="104" cy="58" r="3" fill="#2481cc" />
+                                <circle cx="116" cy="36" r="1.5" fill="#2481cc" />
+                                <path fill="#2481cc" d="M 94,22 Q 94,26 98,26 Q 94,26 94,30 Q 94,26 90,26 Q 94,26 94,22 Z" />
+                                <path fill="#2481cc" d="M 118,58 Q 118,62 121,62 Q 118,62 118,66 Q 118,62 115,62 Q 118,62 118,58 Z" />
+                            </g>
+                            <g class="organ-group" transform="translate(18, 2)">
+                                <rect x="131" y="63" width="42" height="6" rx="2" fill="url(#morphGradientSec3)" />
+                                <line x1="136" y1="63" x2="136" y2="69" stroke="#17212b" stroke-width="1" />
+                                <line x1="142" y1="63" x2="142" y2="69" stroke="#17212b" stroke-width="1" />
+                                <line x1="148" y1="63" x2="148" y2="69" stroke="#17212b" stroke-width="1" />
+                                <line x1="154" y1="63" x2="154" y2="69" stroke="#17212b" stroke-width="1" />
+                                <line x1="160" y1="63" x2="160" y2="69" stroke="#17212b" stroke-width="1" />
+                                <line x1="166" y1="63" x2="166" y2="69" stroke="#17212b" stroke-width="1" />
+                                <path fill="url(#morphGradientSec3)" d="M 134,59 L 138,59 L 138,40 L 134,42 Z" />
+                                <polygon points="135,51 137,51 136,48" fill="#17212b" />
+                                <path fill="url(#morphGradientSec3)" d="M 141,59 L 145,59 L 145,28 L 141,30 Z" />
+                                <polygon points="142,51 144,51 143,48" fill="#17212b" />
+                                <path fill="url(#morphGradientSec3)" d="M 148,59 L 152,59 L 152,15 L 148,17 Z" />
+                                <polygon points="149,51 151,51 150,48" fill="#17212b" />
+                                <path fill="url(#morphGradientSec3)" d="M 155,59 L 159,59 L 159,28 L 155,30 Z" />
+                                <polygon points="156,51 158,51 157,48" fill="#17212b" />
+                                <path fill="url(#morphGradientSec3)" d="M 162,59 L 166,59 L 166,40 L 162,42 Z" />
+                                <polygon points="163,51 165,51 164,48" fill="#17212b" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Polytimbral Polyphonic</h3>
+                    <p>Choir to Organ Morphing</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="section1" class="view">
+            <div class="section-header">
+                <button class="back-btn" onclick="showHome()">Back</button>
+                <h2>Monotimbral Monophonic</h2>              
+                <img src="Morphoné.png" alt="Morphoné Logo" class="mini-logo" style="cursor: pointer;" onclick="stopAllAudio(); showSection('landing')">
+            </div>
+
+            <div class="project-description">
+                <h3>Recording & Artist Spotlight</h3>
+                <p>
+                    This project is built upon an original performance of Carla Bley’s masterpiece, <strong>"Lawns"</strong>, recorded by the <strong>Rino Cirinnà Jazz Quartet</strong>.
+                </p>
+                <div class="credits-container">
+                    <strong>Rino Cirinnà Jazz Quartet:</strong>
+                    <ul class="credits-list">
+                        <li><strong>Luca Biggio</strong> — Saxophone</li>
+                        <li><strong>Rino Cirinnà</strong> — Saxophone</li>
+                        <li><strong>Angelo Cultreri</strong> — Organ</li>
+                        <li><strong>Andrea Liotta</strong> — Drums</li>
+                    </ul>
+                    <span class="composition-credit">Composed by Carla Bley</span>
+                </div>
+            </div>
+
+            <div class="mode-selector-container">
+                <div class="mode-selector">
+                    <span class="mode-glider" id="glider-sec1"></span>
+                    <button class="mode-btn active" onclick="switchMode('sec1', 'solo')">Solos</button>
+                    <button class="mode-btn" onclick="switchMode('sec1', 'backing')">Full Quartet</button>
+                </div>
+            </div>
+
+            <div class="audio-list-wrapper" id="sec1-wrapper-solo">
+                <div class="audio-list">
+                    <div class="audio-item">
+                        <span class="audio-title">1 - Sax</span>
+                        <audio id="audio-sec1-tr1" src="audio/Monotimbral-Monophonic/Sax.mp3"></audio>
+                        <input type="range" class="seek-bar" id="seek-audio-sec1-tr1" value="0" max="100">
+                        <div class="audio-controls">
+                            <span class="time-display" id="time-audio-sec1-tr1">0:00 / 0:00</span>
+                            <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-tr1')" title="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                            </button>
+                            <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-tr1')" title="Stop">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <span class="audio-title">2 - Trumpet</span>
+                        <audio id="audio-sec1-tr2" src="audio/Monotimbral-Monophonic/Trumpet.mp3"></audio>
+                        <input type="range" class="seek-bar" id="seek-audio-sec1-tr2" value="0" max="100">
+                        <div class="audio-controls">
+                            <span class="time-display" id="time-audio-sec1-tr2">0:00 / 0:00</span>
+                            <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-tr2')" title="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                            </button>
+                            <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-tr2')" title="Stop">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <span class="audio-title">3 - Morphoné</span>
+                        <audio id="audio-sec1-tr3" src="audio/Monotimbral-Monophonic/Morphing.mp3"></audio>
+                        <input type="range" class="seek-bar" id="seek-audio-sec1-tr3" value="0" max="100">
+                        <div class="audio-controls">
+                            <span class="time-display" id="time-audio-sec1-tr3">0:00 / 0:00</span>
+                            <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-tr3')" title="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                            </button>
+                            <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-tr3')" title="Stop">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-list-wrapper hidden" id="sec1-wrapper-backing">
+                <div class="audio-list">
+                    <div class="audio-item">
+                        <span class="audio-title">1 - Sax</span>
+                        <audio id="audio-sec1-tr1-back" src="audio/Monotimbral-Monophonic/Sax_Short.mp3"></audio>
+                        <input type="range" class="seek-bar" id="seek-audio-sec1-tr1-back" value="0" max="100">
+                        <div class="audio-controls">
+                            <span class="time-display" id="time-audio-sec1-tr1-back">0:00 / 0:00</span>
+                            <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-tr1-back')" title="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                            </button>
+                            <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-tr1-back')" title="Stop">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <span class="audio-title">2 - Trumpet</span>
+                        <audio id="audio-sec1-tr2-back" src="audio/Monotimbral-Monophonic/Trumpet_Short.mp3"></audio>
+                        <input type="range" class="seek-bar" id="seek-audio-sec1-tr2-back" value="0" max="100">
+                        <div class="audio-controls">
+                            <span class="time-display" id="time-audio-sec1-tr2-back">0:00 / 0:00</span>
+                            <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-tr2-back')" title="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                            </button>
+                            <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-tr2-back')" title="Stop">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <span class="audio-title">3 - Morphoné</span>
+                        <audio id="audio-sec1-tr3-back" src="audio/Monotimbral-Monophonic/Morphing_Short.mp3"></audio>
+                        <input type="range" class="seek-bar" id="seek-audio-sec1-tr3-back" value="0" max="100">
+                        <div class="audio-controls">
+                            <span class="time-display" id="time-audio-sec1-tr3-back">0:00 / 0:00</span>
+                            <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-tr3-back')" title="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                            </button>
+                            <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-tr3-back')" title="Stop">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-trigger-container">
+                <button class="interactive-btn" onclick="showSection('section1-interactive')">Interactive Morphing</button>
+            </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section id="section2" class="view">
+            <div class="section-header">
+                <button class="back-btn" onclick="showHome()">Back</button>
+                <h2>Monotimbral Polyphonic</h2>
+                <img src="Morphoné.png" alt="Morphoné Logo" class="mini-logo" style="cursor: pointer;" onclick="stopAllAudio(); showSection('landing')">
+            </div>
+
+            
+            <!-- Descrizione del Progetto, Metodologia e Crediti -->
+            <div class="project-description">
+                <h3>Project Concept & Artistic Vision</h3>
+                <p>
+                    This project highlights <strong>"Manimé"</strong>, a composition by acclaimed acoustic guitarist <strong>Pietro Nobile</strong> from his LP <em>Indefinito Infinito</em>. Interestingly, Nobile composed "Manimé" to explore "the piano language on the guitar," making this timbral morphing experiment a natural and welcome extension of his original creative intent.
+                </p>
+                
+                <p>
+                    <strong>Aesthetic Fidelity:</strong><br>
+                    For this experiment, a 2'48" excerpt of the full 4'55" piece was isolated. The ambient reverb, a core technical and emotional signature of Nobile's sound, was custom-applied and mixed by the artist himself in his private studio across all presented versions. Crucially, this Timbre Transfer does not seek to simulate a standard piano cover; instead, it aims to preserve the expressive articulation of the guitar. For this reason, conventional piano enhancements (such as the sustain pedal) were intentionally avoided to prevent any unnatural artificiality.
+                </p>
+
+                <div class="credits-container">
+                    <strong>Pietro Nobile — "Manimé"</strong>
+                    <ul class="credits-list">
+                        <li><strong>Pietro Nobile</strong> — Composer, Acoustic Guitar, Mixing & Reverb</li>
+                        <li><strong>Acoustic Source</strong> — From the LP <em>Indefinito Infinito</em></li>
+                        <li><strong>MIDI Target Library</strong> — PSound Gran Coda</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="audio-list">
+                <!-- Track 1 -->
+                <div class="audio-item">
+                    <span class="audio-title">1 - Guitar</span>
+                    <audio id="audio-sec2-tr1" src="audio/Monotimbral-Polyphonic/Guitar.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec2-tr1" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec2-tr1">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec2-tr1')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec2-tr1')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Track 2 -->
+                <div class="audio-item">
+                    <span class="audio-title">2 - Piano</span>
+                    <audio id="audio-sec2-tr2" src="audio/Monotimbral-Polyphonic/Piano.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec2-tr2" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec2-tr2">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec2-tr2')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec2-tr2')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Track 3 -->
+                <div class="audio-item">
+                    <span class="audio-title">3 - Morphoné</span>
+                    <audio id="audio-sec2-tr3" src="audio/Monotimbral-Polyphonic/Morphing.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec2-tr3" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec2-tr3">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec2-tr3')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec2-tr3')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-trigger-container">
+                <button class="interactive-btn" onclick="showSection('section2-interactive')">Interactive Morphing</button>
+            </div>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section id="section3" class="view">
+            <div class="section-header">
+                <button class="back-btn" onclick="showHome()">Back</button>
+                <h2>Polytimbral Polyphonic</h2>
+                <img src="Morphoné.png" alt="Morphoné Logo" class="mini-logo" style="cursor: pointer;" onclick="stopAllAudio(); showSection('landing')">
+            </div>
+
+            <div class="project-description">
+                <h3>Project Concept & Artistic Vision</h3>
+                <p>
+                    This project is built upon an original performance of the classical Adolphe Adam's Christmas carol <strong>"O Holy Night"</strong>, recorded by choir director <strong>Marco Lucà</strong>.
+                </p>
+                <div class="credits-container">
+                    <strong>Choir Ensembles:</strong>
+                    <ul class="credits-list">
+                        <li>Corale <strong>Anna Maria Scala</strong> of Cen.Tr.O 21, Coro <strong>Note di Volta</strong>, Coro <strong>Spore</strong>.</li>
+                    </ul>
+                    <span class="composition-credit">Composed by Adolphe Adam</span>
+                </div>
+            </div>
+            
+            <div class="audio-list">
+                <div class="audio-item">
+                    <span class="audio-title">1 - Choir</span>
+                    <audio id="audio-sec3-tr1" src="audio/Polytimbral-Polyphonic/Choir.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec3-tr1" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec3-tr1">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec3-tr1')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec3-tr1')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="audio-item">
+                    <span class="audio-title">2 - Organ</span>
+                    <audio id="audio-sec3-tr2" src="audio/Polytimbral-Polyphonic/Organ.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec3-tr2" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec3-tr2">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec3-tr2')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec3-tr2')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="audio-item">
+                    <span class="audio-title">3 - Morphoné</span>
+                    <audio id="audio-sec3-tr3" src="audio/Polytimbral-Polyphonic/Morphing.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec3-tr3" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec3-tr3">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec3-tr3')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec3-tr3')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-trigger-container">
+                <button class="interactive-btn" onclick="showSection('section3-interactive')">Interactive Morphing</button>
+            </div>
+
+        </section>
+
+        <!-- SECTION 1 INTERACTIVE -->
+        <section id="section1-interactive" class="view">
+            <div class="section-header">
+                <div class="secondary-dropdown">
+                    <button class="dropdown-btn" onclick="toggleSecondaryDropdown(event, 'drop-sec1-int')">Navigation ☰</button>
+                    <div id="drop-sec1-int" class="dropdown-content">
+                        <a href="#" onclick="exitInteractive('section1')">Back to Tracks</a>
+                        <a href="#" onclick="exitInteractive('home')">Listening Portal</a>
+                        <a href="#" onclick="exitInteractive('contacts')">Contacts</a>
+                        <a href="#" onclick="exitInteractive('technology')">Our Technology</a>
+                    </div>
+                </div>
+                <h2>Interactive Morphoné</h2>              
+                <img src="Morphoné.png" alt="Morphoné Logo" class="mini-logo" style="cursor: pointer;" onclick="exitInteractive('landing')">
+            </div>
+
+            <div class="interactive-container">
+                <h3>Real-Time Settings: Relative Volume & Stereo Placement</h3>
+                <div class="interactive-controls">
+                    <div class="joint-controls">
+                        <button class="control-btn play-btn" id="play-sec1-int" onclick="toggleInteractivePlay('sec1')" title="Play/Pause Both">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopInteractive('sec1')" title="Stop Both">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn backing-btn active" id="btn-sec1-backing" onclick="toggleBackingButton('sec1')" title="Mute/Unmute Base">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="interactive-timeline">
+                        <span class="time-display" id="time-sec1-int">0:00 / 0:00</span>
+                        <input type="range" class="seek-bar" id="seek-sec1-int" value="0" max="100">
+                    </div>
+
+                    <div class="fader-panel">
+                        <span class="fader-subtitle">100% Sax - 50% / 50% Mix - 100% Trumpet</span>
+                        <div class="fader-wrapper">
+                            <div class="fader-icon fader-icon-left" title="Saxophone">
+                                <svg viewBox="-5 5 70 80" width="40" height="40">
+                                    <defs>
+                                        <linearGradient id="intGradSax" x1="0%" y1="100%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2481cc" />
+                                            <stop offset="50%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ff8f00" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(-20, 0)">
+                                        <path fill="none" stroke="url(#intGradSax)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"
+                                              d="M 32,16 C 38,16 42,18 42,24 L 42,64 A 14,14 0 0 0 70,64 L 70,52" />
+                                        <path fill="url(#intGradSax)" stroke="url(#intGradSax)" stroke-width="2" stroke-linejoin="round"
+                                              d="M 64,54 L 76,54 L 84,36 L 56,36 Z" />
+                                        <ellipse cx="70" cy="36" rx="14" ry="4" fill="#17212b" stroke="url(#intGradSax)" stroke-width="3" />
+                                        <path fill="url(#intGradSax)" d="M 25,11.5 L 25,20.5 L 32.8,16 Z" />
+                                        <circle cx="35" cy="32" r="3.5" fill="url(#intGradSax)" />
+                                        <circle cx="35" cy="42" r="3.5" fill="url(#intGradSax)" />
+                                        <circle cx="35" cy="52" r="3.5" fill="url(#intGradSax)" />
+                                        <line x1="42" y1="28" x2="46" y2="28" stroke="url(#intGradSax)" stroke-width="2.5" stroke-linecap="round" />
+                                        <line x1="42" y1="38" x2="46" y2="38" stroke="url(#intGradSax)" stroke-width="2.5" stroke-linecap="round" />
+                                        <line x1="42" y1="48" x2="46" y2="48" stroke="url(#intGradSax)" stroke-width="2.5" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="slider-track-container">
+                                <div class="fader-tooltip" id="tooltip-sec1">100%</div>
+                                <input type="range" class="crossfader-slider" id="fader-sec1" min="0" max="100" value="50" oninput="crossfade('sec1', this.value)">
+                            </div>
+
+                            <div class="fader-icon fader-icon-right" title="Trumpet">
+                                <svg viewBox="128 25 80 50" width="40" height="40">
+                                    <defs>
+                                        <linearGradient id="intGradTpt" x1="0%" y1="100%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2481cc" />
+                                            <stop offset="50%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ff8f00" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(18, 0)">
+                                        <path fill="none" stroke="url(#intGradTpt)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"
+                                              d="M 124,50 L 164,50 M 124,56 L 158,56 A 4,4 0 0 0 162,52 L 162,50" />
+                                        <path fill="url(#intGradTpt)" stroke="url(#intGradTpt)" stroke-width="2" stroke-linejoin="round"
+                                              d="M 158,46 L 158,60 L 176,67 L 176,41 Z" />
+                                        <ellipse cx="176" cy="54" rx="4" ry="14" fill="#17212b" stroke="url(#intGradTpt)" stroke-width="3" />
+                                        <path fill="url(#intGradTpt)" d="M 124,53 L 118,49 L 118,57 Z" />
+                                        <circle cx="131" cy="43" r="3.5" fill="url(#intGradTpt)" />
+                                        <circle cx="140" cy="43" r="3.5" fill="url(#intGradTpt)" />
+                                        <circle cx="149" cy="43" r="3.5" fill="url(#intGradTpt)" />
+                                        <line x1="136" y1="36" x2="136" y2="50" stroke="url(#intGradTpt)" stroke-width="2.5" stroke-linecap="round" />
+                                        <line x1="144" y1="36" x2="144" y2="50" stroke="url(#intGradTpt)" stroke-width="2.5" stroke-linecap="round" />
+                                        <line x1="152" y1="36" x2="152" y2="50" stroke="url(#intGradTpt)" stroke-width="2.5" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spatial-panel">
+                        <h4>-90° Left - 0° Center - 90° Right</h4>
+                        <div class="knobs-wrapper">
+                            <div class="knob-container">
+                                <div class="knob-surround">
+                                    <div class="knob-ticks-container"></div>
+                                    <span class="knob-letter letter-l">L</span>
+                                    <span class="knob-letter letter-c">C</span>
+                                    <span class="knob-letter letter-r">R</span>
+                                    <div class="knob" id="knob-sec1-left" data-sec="sec1" data-inst="left" data-angle="-45">
+                                        <div class="knob-dial"></div>
+                                        <div class="knob-pointer"></div>
+                                    </div>
+                                </div>
+                                <span class="knob-label">Saxophone</span>
+                                <div class="knob-value-badge">
+                                    <input type="number" class="knob-value-input" id="val-sec1-left" min="-90" max="90" value="-45" oninput="handleValueInput(this)" onblur="sanitizeValueInput(this)">
+                                    <span class="deg-symbol">°</span>
+                                </div>
+                            </div>
+                            <div class="knob-container">
+                                <div class="knob-surround">
+                                    <div class="knob-ticks-container"></div>
+                                    <span class="knob-letter letter-l">L</span>
+                                    <span class="knob-letter letter-c">C</span>
+                                    <span class="knob-letter letter-r">R</span>
+                                    <div class="knob" id="knob-sec1-right" data-sec="sec1" data-inst="right" data-angle="45">
+                                        <div class="knob-dial"></div>
+                                        <div class="knob-pointer"></div>
+                                    </div>
+                                </div>
+                                <span class="knob-label">Trumpet</span>
+                                <div class="knob-value-badge">
+                                    <input type="number" class="knob-value-input" id="val-sec1-right" min="-90" max="90" value="45" oninput="handleValueInput(this)" onblur="sanitizeValueInput(this)">
+                                    <span class="deg-symbol">°</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio id="audio-sec1-int-left" src="audio/Monotimbral-Monophonic/Sax.mp3"></audio>
+                    <audio id="audio-sec1-int-right" src="audio/Monotimbral-Monophonic/Trumpet.mp3"></audio>
+                    <audio id="audio-sec1-int-backing" src="audio/Monotimbral-Monophonic/Base_Short.mp3"></audio>
+                </div>
+
+                <h3 style="margin-top: 40px; margin-bottom: 15px;">Our Version of Morphoné</h3>
+                <div class="audio-item">
+                    <span class="audio-title">Sax / Trumpet</span>
+                    <audio id="audio-sec1-int-exp" src="audio/Monotimbral-Monophonic/Morphing.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec1-int-exp" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec1-int-exp">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec1-int-exp')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec1-int-exp')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2 INTERACTIVE -->
+        <section id="section2-interactive" class="view">
+            <div class="section-header">
+                <div class="secondary-dropdown">
+                    <button class="dropdown-btn" onclick="toggleSecondaryDropdown(event, 'drop-sec2-int')">Navigation ☰</button>
+                    <div id="drop-sec2-int" class="dropdown-content">
+                        <a href="#" onclick="exitInteractive('section2')">Back to Tracks</a>
+                        <a href="#" onclick="exitInteractive('home')">Listening Portal</a>
+                        <a href="#" onclick="exitInteractive('contacts')">Contacts</a>
+                        <a href="#" onclick="exitInteractive('technology')">Our Technology</a>
+                    </div>
+                </div>
+                <h2>Interactive Morphoné</h2>
+                <img src="Morphoné.png" alt="Morphoné Logo" class="mini-logo" style="cursor: pointer;" onclick="exitInteractive('landing')">
+            </div>
+
+            <div class="interactive-container">
+                <h3>Real-Time Settings: Relative Volume & Stereo Balance</h3>
+                <div class="interactive-controls">
+                    <div class="joint-controls">
+                        <button class="control-btn play-btn" id="play-sec2-int" onclick="toggleInteractivePlay('sec2')" title="Play/Pause Both">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopInteractive('sec2')" title="Stop Both">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="interactive-timeline">
+                        <span class="time-display" id="time-sec2-int">0:00 / 0:00</span>
+                        <input type="range" class="seek-bar" id="seek-sec2-int" value="0" max="100">
+                    </div>
+
+                    <div class="fader-panel">
+                        <span class="fader-subtitle">100% Guitar - 50% / 50% Mix - 100% Piano</span>
+                        <div class="fader-wrapper">
+                            <div class="fader-icon fader-icon-left" title="Guitar">
+                                <svg viewBox="5 5 45 80" width="40" height="40">
+                                    <defs>
+                                        <linearGradient id="intGradGtr" x1="0%" y1="100%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2481cc" />
+                                            <stop offset="50%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ff8f00" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(-10, 5)">
+                                        <path fill="url(#intGradGtr)" stroke="url(#intGradGtr)" stroke-width="2" stroke-linejoin="round"
+                                              d="M 38,40 C 28,40 24,45 24,50 C 24,55 28,57 33,57 C 26,61 26,74 38,74 C 50,74 50,61 43,57 C 48,57 52,55 52,50 C 52,45 48,40 38,40 Z" />
+                                        <ellipse cx="38" cy="50" rx="5" ry="5" fill="#17212b" stroke="url(#intGradGtr)" stroke-width="2.5" />
+                                        <rect x="32" y="63" width="12" height="3" rx="1" fill="url(#intGradGtr)" />
+                                        <line x1="38" y1="38" x2="37.9" y2="8" stroke="url(#intGradGtr)" stroke-width="5.5" stroke-linecap="round" />
+                                        <line x1="38" y1="16" x2="38" y2="10" stroke="url(#intGradGtr)" stroke-width="3" stroke-linecap="round" />
+                                        <circle cx="33" cy="11" r="1.5" fill="url(#intGradGtr)" />
+                                        <circle cx="33" cy="15" r="1.5" fill="url(#intGradGtr)" />
+                                        <circle cx="43" cy="11" r="1.5" fill="url(#intGradGtr)" />
+                                        <circle cx="43" cy="15" r="1.5" fill="url(#intGradGtr)" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="slider-track-container">
+                                <div class="fader-tooltip" id="tooltip-sec2">100%</div>
+                                <input type="range" class="crossfader-slider" id="fader-sec2" min="0" max="100" value="50" oninput="crossfade('sec2', this.value)">
+                            </div>
+
+                            <div class="fader-icon fader-icon-right" title="Piano">
+                                <svg viewBox="141 10 50 60" width="37" height="37">
+                                    <defs>
+                                        <linearGradient id="intGradPno" x1="0%" y1="100%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2481cc" />
+                                            <stop offset="50%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ff8f00" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(22, 3)">
+                                        <path fill="url(#intGradPno)" stroke="url(#intGradPno)" stroke-width="2" stroke-linejoin="round"
+                                              d="M 124,56 L 164,56 C 164,42 160,30 146,30 L 124,30 Z" />
+                                        <path fill="none" stroke="url(#intGradPno)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                              d="M 124.5,57 L 124.5,62 L 164,62" />
+                                        <line x1="134" y1="56" x2="134" y2="62" stroke="url(#intGradPno)" stroke-width="1.5" />
+                                        <line x1="144" y1="56" x2="144" y2="62" stroke="url(#intGradPno)" stroke-width="1.5" />
+                                        <line x1="154" y1="56" x2="154" y2="62" stroke="url(#intGradPno)" stroke-width="1.5" />
+                                        <line x1="126" y1="30" x2="162" y2="10" stroke="url(#intGradPno)" stroke-width="4.5" stroke-linecap="round" />
+                                        <line x1="146" y1="30" x2="152" y2="18" stroke="url(#intGradPno)" stroke-width="2.5" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spatial-panel">
+                        <h4>-90° Left - 0° Center - 90° Right</h4>
+                        <div class="knobs-wrapper">
+                            <div class="knob-container">
+                                <div class="knob-surround">
+                                    <div class="knob-ticks-container"></div>
+                                    <span class="knob-letter letter-l">L</span>
+                                    <span class="knob-letter letter-c">C</span>
+                                    <span class="knob-letter letter-r">R</span>
+                                    <div class="knob" id="knob-sec2-left" data-sec="sec2" data-inst="left" data-angle="-45">
+                                        <div class="knob-dial"></div>
+                                        <div class="knob-pointer"></div>
+                                    </div>
+                                </div>
+                                <span class="knob-label">Guitar</span>
+                                <div class="knob-value-badge">
+                                    <input type="number" class="knob-value-input" id="val-sec2-left" min="-90" max="90" value="-45" oninput="handleValueInput(this)" onblur="sanitizeValueInput(this)">
+                                    <span class="deg-symbol">°</span>
+                                </div>
+                            </div>
+                            <div class="knob-container">
+                                <div class="knob-surround">
+                                    <div class="knob-ticks-container"></div>
+                                    <span class="knob-letter letter-l">L</span>
+                                    <span class="knob-letter letter-c">C</span>
+                                    <span class="knob-letter letter-r">R</span>
+                                    <div class="knob" id="knob-sec2-right" data-sec="sec2" data-inst="right" data-angle="45">
+                                        <div class="knob-dial"></div>
+                                        <div class="knob-pointer"></div>
+                                    </div>
+                                </div>
+                                <span class="knob-label">Piano</span>
+                                <div class="knob-value-badge">
+                                    <input type="number" class="knob-value-input" id="val-sec2-right" min="-90" max="90" value="45" oninput="handleValueInput(this)" onblur="sanitizeValueInput(this)">
+                                    <span class="deg-symbol">°</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio id="audio-sec2-int-left" src="audio/Monotimbral-Polyphonic/Guitar.mp3" ></audio>
+                    <audio id="audio-sec2-int-right" src="audio/Monotimbral-Polyphonic/Piano.mp3" ></audio>
+                </div>
+
+                <h3 style="margin-top: 40px; margin-bottom: 15px;">Our Version of Morphoné</h3>
+                <div class="audio-item">
+                    <span class="audio-title">Guitar / Piano</span>
+                    <audio id="audio-sec2-int-exp" src="audio/Monotimbral-Polyphonic/Morphing.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec2-int-exp" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec2-int-exp">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec2-int-exp')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec2-int-exp')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 3 INTERACTIVE -->
+        <section id="section3-interactive" class="view">
+            <div class="section-header">
+                <div class="secondary-dropdown">
+                    <button class="dropdown-btn" onclick="toggleSecondaryDropdown(event, 'drop-sec3-int')">Navigation ☰</button>
+                    <div id="drop-sec3-int" class="dropdown-content">
+                        <a href="#" onclick="exitInteractive('section3')">Back to Tracks</a>
+                        <a href="#" onclick="exitInteractive('home')">Listening Portal</a>
+                        <a href="#" onclick="exitInteractive('contacts')">Contacts</a>
+                        <a href="#" onclick="exitInteractive('technology')">Our Technology</a>
+                    </div>
+                </div>
+                <h2>Interactive Morphoné</h2>
+                <img src="Morphoné.png" alt="Morphoné Logo" class="mini-logo" style="cursor: pointer;" onclick="exitInteractive('landing')">
+            </div>
+
+            <div class="interactive-container">
+                <h3>Real-Time Settings: Relative Volume & Stereo Balance</h3>
+                <div class="interactive-controls">
+                    <div class="joint-controls">
+                        <button class="control-btn play-btn" id="play-sec3-int" onclick="toggleInteractivePlay('sec3')" title="Play/Pause Both">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopInteractive('sec3')" title="Stop Both">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="interactive-timeline">
+                        <span class="time-display" id="time-sec3-int">0:00 / 0:00</span>
+                        <input type="range" class="seek-bar" id="seek-sec3-int" value="0" max="100">
+                    </div>
+
+                    <div class="fader-panel">
+                        <span class="fader-subtitle">100% Choir - 50% / 50% Mix - 100% Organ</span>
+                        <div class="fader-wrapper">
+                            <div class="fader-icon fader-icon-left" title="Choir">
+                                <svg viewBox="7 10 50 65" width="40" height="40">
+                                    <defs>
+                                        <linearGradient id="intGradChoir" x1="0%" y1="100%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2481cc" />
+                                            <stop offset="50%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ff8f00" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(-4, 4)">
+                                        <path fill="none" stroke="url(#intGradChoir)" stroke-width="1.5" stroke-linecap="round" d="M 20,24 A 16,16 0 0 1 52,24" />
+                                        <path fill="none" stroke="url(#intGradChoir)" stroke-width="2" stroke-linecap="round" d="M 25,18 A 11,11 0 0 1 47,18" />
+                                        <path fill="url(#intGradChoir)" d="M 29,66 L 31,41 C 31,38 41,38 41,41 L 43,66 Z" />
+                                        <circle cx="36" cy="31" r="5" fill="url(#intGradChoir)" />
+                                        <path fill="url(#intGradChoir)" d="M 19,66 L 21,47 C 21,44 29,44 29,47 L 31,66 Z" />
+                                        <circle cx="25" cy="37" r="4.5" fill="url(#intGradChoir)" />
+                                        <path fill="url(#intGradChoir)" d="M 41,66 L 43,47 C 43,44 51,44 51,47 L 53,66 Z" />
+                                        <circle cx="47" cy="37" r="4.5" fill="url(#intGradChoir)" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="slider-track-container">
+                                <div class="fader-tooltip" id="tooltip-sec3">100%</div>
+                                <input type="range" class="crossfader-slider" id="fader-sec3" min="0" max="100" value="50" oninput="crossfade('sec3', this.value)">
+                            </div>
+
+                            <div class="fader-icon fader-icon-right" title="Organ">
+                                <svg viewBox="143 14 55 65" width="40" height="40">
+                                    <defs>
+                                        <linearGradient id="intGradOrg" x1="0%" y1="100%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2481cc" />
+                                            <stop offset="50%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ff8f00" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(18, 2)">
+                                        <rect x="131" y="63" width="42" height="6" rx="2" fill="url(#intGradOrg)" />
+                                        <line x1="136" y1="63" x2="136" y2="69" stroke="#17212b" stroke-width="1" />
+                                        <line x1="142" y1="63" x2="142" y2="69" stroke="#17212b" stroke-width="1" />
+                                        <line x1="148" y1="63" x2="148" y2="69" stroke="#17212b" stroke-width="1" />
+                                        <line x1="154" y1="63" x2="154" y2="69" stroke="#17212b" stroke-width="1" />
+                                        <line x1="160" y1="63" x2="160" y2="69" stroke="#17212b" stroke-width="1" />
+                                        <line x1="166" y1="63" x2="166" y2="69" stroke="#17212b" stroke-width="1" />
+                                        <path fill="url(#intGradOrg)" d="M 134,59 L 138,59 L 138,40 L 134,42 Z" />
+                                        <polygon points="135,51 137,51 136,48" fill="#17212b" />
+                                        <path fill="url(#intGradOrg)" d="M 141,59 L 145,59 L 145,28 L 141,30 Z" />
+                                        <polygon points="142,51 144,51 143,48" fill="#17212b" />
+                                        <path fill="url(#intGradOrg)" d="M 148,59 L 152,59 L 152,15 L 148,17 Z" />
+                                        <polygon points="149,51 151,51 150,48" fill="#17212b" />
+                                        <path fill="url(#intGradOrg)" d="M 155,59 L 159,59 L 159,28 L 155,30 Z" />
+                                        <polygon points="156,51 158,51 157,48" fill="#17212b" />
+                                        <path fill="url(#intGradOrg)" d="M 162,59 L 166,59 L 166,40 L 162,42 Z" />
+                                        <polygon points="163,51 165,51 164,48" fill="#17212b" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="spatial-panel">
+                        <h4>-90° Left - 0° Center - 90° Right</h4>
+                        <div class="knobs-wrapper">
+                            <div class="knob-container">
+                                <div class="knob-surround">
+                                    <div class="knob-ticks-container"></div>
+                                    <span class="knob-letter letter-l">L</span>
+                                    <span class="knob-letter letter-c">C</span>
+                                    <span class="knob-letter letter-r">R</span>
+                                    <div class="knob" id="knob-sec3-left" data-sec="sec3" data-inst="left" data-angle="-45">
+                                        <div class="knob-dial"></div>
+                                        <div class="knob-pointer"></div>
+                                    </div>
+                                </div>
+                                <span class="knob-label">Choir</span>
+                                <div class="knob-value-badge">
+                                    <input type="number" class="knob-value-input" id="val-sec3-left" min="-90" max="90" value="-45" oninput="handleValueInput(this)" onblur="sanitizeValueInput(this)">
+                                    <span class="deg-symbol">°</span>
+                                </div>
+                            </div>
+                            <div class="knob-container">
+                                <div class="knob-surround">
+                                    <div class="knob-ticks-container"></div>
+                                    <span class="knob-letter letter-l">L</span>
+                                    <span class="knob-letter letter-c">C</span>
+                                    <span class="knob-letter letter-r">R</span>
+                                    <div class="knob" id="knob-sec3-right" data-sec="sec3" data-inst="right" data-angle="45">
+                                        <div class="knob-dial"></div>
+                                        <div class="knob-pointer"></div>
+                                    </div>
+                                </div>
+                                <span class="knob-label">Organ</span>
+                                <div class="knob-value-badge">
+                                    <input type="number" class="knob-value-input" id="val-sec3-right" min="-90" max="90" value="45" oninput="handleValueInput(this)" onblur="sanitizeValueInput(this)">
+                                    <span class="deg-symbol">°</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio id="audio-sec3-int-left" src="audio/Polytimbral-Polyphonic/Choir.mp3" ></audio>
+                    <audio id="audio-sec3-int-right" src="audio/Polytimbral-Polyphonic/Organ.mp3" ></audio>
+                </div>
+
+                <h3 style="margin-top: 40px; margin-bottom: 15px;">Our Version of Morphoné</h3>
+                <div class="audio-item">
+                    <span class="audio-title">Choir / Organ</span>
+                    <audio id="audio-sec3-int-exp" src="audio/Polytimbral-Polyphonic/Morphing.mp3"></audio>
+                    <input type="range" class="seek-bar" id="seek-audio-sec3-int-exp" value="0" max="100">
+                    <div class="audio-controls">
+                        <span class="time-display" id="time-audio-sec3-int-exp">0:00 / 0:00</span>
+                        <button class="control-btn play-btn" onclick="togglePlayPause('audio-sec3-int-exp')" title="Play/Pause">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn stop-btn" onclick="stopAudio('audio-sec3-int-exp')" title="Stop">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6h12v12H6z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- CONTACTS SECTION -->
+        <section id="contacts" class="view">
+            <div class="dropdown-menu">
+                <button class="dropdown-btn" onclick="toggleDropdown()">Menu ☰</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('landing')">Home</a>
+                    <a href="#" onclick="showSection('home')">Listening Portal</a>
+                    <a href="#" onclick="showSection('contacts')">Contacts</a>
+                    <a href="#" onclick="showSection('technology')">Our Technology</a>
+                </div>
+            </div>
+
+            <header class="main-header">
+                <div class="logo-container">
+                    <img src="Morphoné.png" alt="Morphoné Logo" class="site-logo">
+                </div>
+                <p>Contacts</p>
+            </header>
+            
+            <div class="contacts-container">
+                <div class="contact-card">
+                    <h3>Corrado Amedeo Bertazzoni</h3>
+                    <div class="email-list">
+                        <a href="mailto:corradoamedeo.bertazzoni@mail.polimi.it" class="email-link">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            corradoamedeo.bertazzoni@mail.polimi.it
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Salvatore Benvenuto Zocco</h3>
+                    <div class="email-list">
+                        <a href="mailto:salvatorebenvenuto.zocco@mail.polimi.it" class="email-link">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            salvatorebenvenuto.zocco@mail.polimi.it
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TERZA SCHERMATA: OUR TECHNOLOGY - FOR NERDS -->
+        <section id="technology" class="view">
+            <div class="dropdown-menu">
+                <button class="dropdown-btn" onclick="toggleDropdown()">Menu ☰</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('landing')">Home</a>
+                    <a href="#" onclick="showSection('home')">Listening Portal</a>
+                    <a href="#" onclick="showSection('contacts')">Contacts</a>
+                    <a href="#" onclick="showSection('technology')">Our Technology</a>
+                </div>
+            </div>
+
+            <header class="main-header">
+                <div class="logo-container">
+                    <img src="Morphoné.png" alt="Morphoné Logo" class="site-logo">
+                </div>
+            </header>
+
+            <div class="overview-section">
+                <div class="overview-row">
+                    <div class="overview-text">
+                        <h3 style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; font-size: 1.35rem; color: #2481cc; margin-bottom: 12px;">Differentiable DSP & Monophonic Timbre Transfer</h3>
+                        <p>
+                            For monophonic morphing (such as our <em>Sax to Brass</em> pipeline), we leverage <a href="https://github.com/magenta/ddsp" target="_blank" style="color: #2481cc; text-decoration: underline; font-weight: 600; transition: color 0.2s;" onmouseover="this.style.color='#ff8f00'" onmouseout="this.style.color='#2481cc'">Google Magenta’s</a> pioneering research in <strong>Differentiable Digital Signal Processing (DDSP)</strong>. Unlike traditional end-to-end neural audio synthesis, DDSP integrates classical DSP elements (such as additive synthesizers and filtered noise generators) as differentiable layers within deep learning architectures.
+                        </p>
+                        <p>
+                            Our implementation utilizes the advanced <a href="https://github.com/yxlllc/DDSP-SVC" target="_blank" style="color: #2481cc; text-decoration: underline; font-weight: 600; transition: color 0.2s;" onmouseover="this.style.color='#ff8f00'" onmouseout="this.style.color='#2481cc'">DDSP-SVC Repository</a>, a real-time singing voice and instrument conversion framework. By decoupling pitch (F0) tracking and loudness extraction from the spectral identity (timbre), the system reconstructs the expressive acoustic nuances of the original saxophone performance through the physical model parameters of the target trumpet instrument.
+                        </p>
+                    </div>
+                    <div class="overview-media">
+                        <img src="Block_Diagram.jpeg" alt="Neural DSP Engine" class="overview-img">
+                    </div>                   
+                </div>
+
+                <div class="overview-row reverse" style="margin-top: -50px;">
+                    <div class="overview-text">
+                        <h3 style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; font-size: 1.35rem; color: #2481cc; margin-bottom: 12px;">Polyphonic Audio-to-MIDI Transcription</h3>
+                        <p>
+                            To achieve timbral translation for complex polyphonic performances, such as Pietro Nobile's <em>"Manimé"</em>, we employ a hybrid symbolic approach. Rather than raw spectral mapping, the acoustic guitar signal is transcribed into high-fidelity polyphonic MIDI data onsets.
+                        </p>
+                        <p>
+                            We base our transcription pipeline on Spotify’s machine learning model, utilizing our custom interactive version of the lightweight and precise <a href="https://colab.research.google.com/drive/1Tn9C6REFWaN4zOVSweV80YDV1CplDkdE" target="_blank" style="color: #2481cc; text-decoration: underline; font-weight: 600; transition: color 0.2s;" onmouseover="this.style.color='#ff8f00'" onmouseout="this.style.color='#2481cc'">Basic Pitch Google Colab Notebook</a>. This neural network processes the audio through a multi-pitch estimation network, yielding structural note onsets and precise dynamic velocities. This symbolic stream is subsequently edited and mapped onto multisampled acoustic model target engines.
+                        </p>
+                    </div>
+                    <div class="overview-media">
+                        <img src="PianoRoll.jpeg" alt="Neural Transcription" class="overview-img">
+                    </div>
+                </div>
+
+                <div class="overview-row" style="margin-top: -40px;">
+                    <div class="overview-text">
+                        <h3 style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; font-size: 1.35rem; color: #2481cc; margin-bottom: 12px;">Open Source Research Ecosystem</h3>
+                        <p>
+                            Our project operates as an open-ended research ecosystem designed for artists, sound engineers and designers, software developers, and scholars, exploring the boundaries of AI-assisted acoustics and creative audio engineering.
+                        </p>
+                        <p>
+                            All datasets, optimization scripts, transcription files, and synthesis parameters are fully documented and accessible. You can explore our complete codebase, experiment with our pipeline, and contribute to the research on our official <a href="https://github.com/SalvatoreBZocco/Morphone" target="_blank" style="color: #2481cc; text-decoration: underline; font-weight: 600; transition: color 0.2s;" onmouseover="this.style.color='#ff8f00'" onmouseout="this.style.color='#2481cc'">Morphone GitHub Project Repository</a>.
+                        </p>
+                    </div>
+                    <div class="overview-media">
+                        <img src="Evocative.jpeg" alt="Neural Transcription" class="overview-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
