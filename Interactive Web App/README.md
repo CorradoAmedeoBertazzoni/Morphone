@@ -1,4 +1,4 @@
-The 'Morphoné' folder is the Web-Audio interactive application to fully experience our experiments. It is ready to be used on pc computers. To avoid OS web-audio blocking procedures, Here are the instructions for Mac users:
+The 'Morphoné' folder is the Web-Audio interactive application, to be downloaded locally, to fully experience our experiments. It is ready to be used on pc computers. To avoid OS web-audio blocking procedures, Here are the instructions for Mac users:
 
 1 - Open the Terminal app on your Mac.
 
